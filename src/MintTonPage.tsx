@@ -194,7 +194,7 @@ const MintTonPage: React.FC = () => {
                     stateInit: state.toBoc().toString('base64')      
                 },
                 {
-                    address: "0QCsMm47egxSofgw5Y-l34ZeMw6vPYUUyTIjYT3HTafpmH9O",
+                    address: "UQAI6XfeQmLtZ8qzeoNWJRYG8wfuWQZBZHZF5-eUH7kDiZVN",
                     amount: "150000000"
                 }
             ]
