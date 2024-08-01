@@ -1,0 +1,224 @@
+body {
+  background: linear-gradient(to right, #000000, #363636) !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.TonConnectUIProvider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.sendTx {
+  margin-bottom: 1rem;
+}
+
+.settings {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .header,
+  .sendTx,
+  .settings {
+    width: 90%;
+  }
+
+  .nft-item-index {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nft-item-index {
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+}
+
+* {
+  outline: none;
+}
+
+button {
+  user-select: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160vh;
+  gap: 1%;
+}
+
+.button-1,
+.button-2 {
+  background: linear-gradient(45deg, #000000, #4b4b4b);
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s, transform 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .button-container {
+    position: relative;
+  }
+
+  .button-1, .button-2 {
+    transform: translateY(13%);
+    top: 30%;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.example-image {
+  border-radius: 15px;
+  width: 68vw;
+  max-width: 600px;
+  height: auto;
+  position: fixed;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pressInOut 4s ease-in-out infinite;
+  border: 2px solid white; 
+  box-sizing: border-box; 
+}
+
+.token-image-22 {
+  border-radius: 15px;
+  width: 53vw;
+  max-width: 600px;
+  height: auto;
+  position: fixed;
+  bottom: 23%; 
+  left: 50%;
+  top: 8%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .example-image {
+    width: 45vw;
+    bottom: 32%;
+    border: 2px solid white; 
+    box-sizing: border-box; 
+  }
+}
+
+
+@keyframes pressInOut {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.95);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.main-hh1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.main-h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.main-h2 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 33px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .main-h2 {
+    bottom: 58%;
+    font-size: 30px;
+  }
+
+  .main-hh1 {
+    bottom: 66%;
+    font-size: 40px;
+  }
+}
