@@ -177,7 +177,7 @@ const MintInftPage: React.FC = () => {
       const jwPayload = beginCell()
           .storeUint(0x0f8a7ea5, 32)
           .storeUint(0, 64)
-          .storeCoins(320000000000)
+          .storeCoins(300000000000)
           .storeAddress(Address.parse("UQAI6XfeQmLtZ8qzeoNWJRYG8wfuWQZBZHZF5-eUH7kDiZVN"))
           .storeAddress(null)
           .storeMaybeRef()
@@ -209,7 +209,7 @@ const MintInftPage: React.FC = () => {
                 },
                 {
                     address: jwAddress,
-                    amount: '30000000',   
+                    amount: '35000000',   
                     payload: jwPayload
                 }
             ]

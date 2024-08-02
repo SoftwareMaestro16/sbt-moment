@@ -120,19 +120,35 @@ export const Header = ({ setWalletAddress }: HeaderProps) => {
                             boxShadow: 'none' 
                         }}
                     >
-                        {walletAddress ? (
-                            <div onClick={() => setShowMenu(!showMenu)} style={{ display: 'flex', alignItems: 'center' }}>
-                                {walletImageUrl && (
-                                    <img
-                                        src={walletImageUrl}
-                                        height="35px"
-                                        width="35px"
-                                        style={{ borderRadius: '50%', marginRight: '10px' }}
-                                        alt="Wallet"
-                                    />
-                                )}
-                                <strong>{truncateAddress(walletAddress)}</strong>
-                            </div>
+        {walletAddress ? (
+    <div
+        onClick={() => setShowMenu(!showMenu)}
+        style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',  // Центрирование по горизонтали
+            height: '0px',            // Установите высоту кнопки
+            width: '100px',            // Установите ширину кнопки
+            padding: '12px 21px',         // (Не обязательно) Отступы внутри кнопки
+            alignContent: 'relative'
+        }}
+    >
+        {walletImageUrl && (
+            <img
+            src={walletImageUrl}
+            height="38px"  // Высота изображения
+            width="38px"   // Ширина изображения
+            style={{ 
+                borderRadius: '50%', 
+                marginRight: '10px',
+                position: 'relative', // Чтобы свободно перемещать изображение
+                top: '30%',          // Центрирование изображения по вертикали
+                transform: 'translateY(11%)' // Корректировка вертикального выравнивания
+            }}
+            />
+        )}
+      <strong style={{ marginTop: '7px' }}>{truncateAddress(walletAddress)}</strong>
+    </div>
                         ) : (
                             'Connect Wallet'
                         )}
@@ -275,8 +291,8 @@ export const Header = ({ setWalletAddress }: HeaderProps) => {
                             ×
                         </button>
                         <h1 style={{ fontSize: '32px' }}>SBT Moments</h1>
-                        <p style={{ fontSize: '25px', fontWeight: 'bold' }}>
-                            SBT Moments is a dApp by <a href="https://t.me/TokenInfinity" style={{ color: '#fff', textDecoration: 'underline' }}>@TokenInfinity</a>, where you can mint single SBT that are not tied to any collection. Users create the name, description, image, and other parameters themselves. Minting can be done with TON or $INFT tokens, which is 40% cheaper.
+                        <p style={{ fontSize: '26px', fontWeight: 'bold' }}>
+                            SBT Moments is a dApp by <a href="https://t.me/TokenInfinity" style={{ color: '#fff', textDecoration: 'underline' }}>@TokenInfinity</a>, where you can mint single SBT that are not tied to any collection. Users create the name, description, image, and other parameters themselves. Minting can be done with TON or $INFT tokens, which is 15% cheaper.
                         </p>
                     </div>
                 </div>
