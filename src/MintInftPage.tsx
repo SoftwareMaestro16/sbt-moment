@@ -209,7 +209,7 @@ const MintInftPage: React.FC = () => {
                 },
                 {
                     address: jwAddress,
-                    amount: '40000000',   
+                    amount: '32000000',   
                     payload: jwPayload
                 }
             ]
