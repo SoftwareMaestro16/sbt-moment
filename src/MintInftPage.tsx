@@ -204,12 +204,12 @@ const MintInftPage: React.FC = () => {
             messages: [
                 {
                     address: new Address(0, state.hash()).toRawString(),
-                    amount: '50000000',
+                    amount: '52000000',
                     stateInit: state.toBoc().toString('base64')      
                 },
                 {
                     address: jwAddress,
-                    amount: '35000000',   
+                    amount: '31000000',   
                     payload: jwPayload
                 }
             ]
