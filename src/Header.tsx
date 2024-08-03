@@ -129,7 +129,7 @@ export const Header = ({ setWalletAddress }: HeaderProps) => {
             justifyContent: 'center',  // Центрирование по горизонтали
             height: '0px',            // Установите высоту кнопки
             width: '100px',            // Установите ширину кнопки
-            padding: '12px 21px',         // (Не обязательно) Отступы внутри кнопки
+            padding: '9px 21px',         // (Не обязательно) Отступы внутри кнопки
             alignContent: 'relative'
         }}
     >
@@ -143,11 +143,11 @@ export const Header = ({ setWalletAddress }: HeaderProps) => {
                 marginRight: '10px',
                 position: 'relative', // Чтобы свободно перемещать изображение
                 top: '30%',          // Центрирование изображения по вертикали
-                transform: 'translateY(11%)' // Корректировка вертикального выравнивания
+                transform: 'translateY(15%)' // Корректировка вертикального выравнивания
             }}
             />
         )}
-      <strong style={{ marginTop: '7px' }}>{truncateAddress(walletAddress)}</strong>
+      <strong style={{ marginTop: '12px' }}>{truncateAddress(walletAddress)}</strong>
     </div>
                         ) : (
                             'Connect Wallet'
